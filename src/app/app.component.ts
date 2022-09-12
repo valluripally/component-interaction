@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'component-assignment';
+
+  oddNumber :number[]=[];
+  evenNumber :number[]=[];
+  printVal(firedNumber:number){
+   console.log(firedNumber);
+    if(firedNumber%2!=0)
+    this.oddNumber.push(firedNumber);
+    else
+    this.evenNumber.push(firedNumber);
+  }
 }
